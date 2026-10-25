@@ -1,195 +1,277 @@
 <div align="center">
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=7C3AED&height=200&section=header&text=Expense%20Tracker&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Flutter%20Personal%20Finance%20App&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:7C3AED,50:4F46E5,100:0EA5E9&height=180&section=header&text=Expense%20Tracker&fontSize=52&fontColor=ffffff&fontAlignY=45&animation=blinking" width="100%"/>
 
 <br/>
 
-<p align="center">
+<a href="#">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Flutter+%C2%B7+Material+3+%C2%B7+fl_chart;Track.+Visualize.+Understand.;4+screens+%C2%B7+Real-time+charts+%C2%B7+No+backend" alt="Typing SVG"/>
+</a>
+
+<br/><br/>
+
+<p>
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Platform-iOS%20%2F%20Android-lightgrey?style=for-the-badge&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Material_3-757575?style=for-the-badge&logo=material-design&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-Complete-0D9488?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Material_3-757575?style=for-the-badge&logo=materialdesign&logoColor=white"/>
+  <img src="https://img.shields.io/badge/fl__chart-7C3AED?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/shared__preferences-0EA5E9?style=for-the-badge"/>
 </p>
 
-<p align="center">
-  <strong>Track spending · Visualize budgets · Understand your money</strong><br/>
-  A clean, card-based mobile app designed for real daily use.
+<p>
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-7C3AED?style=flat-square"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Status-Complete-22C55E?style=flat-square"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/License-MIT-0EA5E9?style=flat-square"/>
 </p>
-
-<br/>
 
 </div>
 
 ---
 
-## ✨ Overview
+<div align="center">
 
-Expense Tracker makes the daily habit of logging expenses **fast and frictionless** — not a chore. Four screens, always one tap away. A purple-teal design system that feels premium without being distracting.
+## `< The Idea />`
 
-```
-Bottom Nav  ──►  🏠 Home  |  📊 Reports  |  ➕ Add  |  👤 Profile
-```
+</div>
 
----
+> Most expense apps bury you in menus. This one opens on your dashboard — every number you care about, no navigation required. Built entirely offline, data lives on-device, and the UI adapts to your system theme automatically.
 
-## 📱 Screens
-
-<table>
-<tr>
-<td width="25%" align="center"><strong>🏠 Dashboard</strong></td>
-<td width="25%" align="center"><strong>➕ Add Expense</strong></td>
-<td width="25%" align="center"><strong>📊 Reports</strong></td>
-<td width="25%" align="center"><strong>👤 Profile</strong></td>
-</tr>
-<tr>
-<td>Personalized greeting, gradient budget card, category scroll row, recent transactions</td>
-<td>Large amount input, category chips, date picker, one-tap save</td>
-<td>Horizontal progress bars per category, 3-stat summary row</td>
-<td>Avatar, monthly budget editor, settings toggles</td>
-</tr>
-</table>
+<br/>
 
 ---
 
-## 🎨 Design System
+## 📱 Screens at a Glance
 
-```dart
-// Color palette
-const Color primary   = Color(0xFF7C3AED);  // Purple
-const Color secondary = Color(0xFF0D9488);  // Teal
-const Color surface   = Color(0xFFF8F7FF);  // Off-white
+<div align="center">
 
-// Gradient hero card
-gradient: LinearGradient(
-  colors: [Color(0xFF7C3AED), Color(0xFF0D9488)],
-  begin: Alignment.topLeft,
-  end: Alignment.bottomRight,
-)
-```
+| 🏠 Dashboard | ➕ Add Expense | 📊 Reports | 👤 Profile |
+|:---:|:---:|:---:|:---:|
+| Monthly total, recent list, quick-add FAB | Category picker, amount field, date selector | Bar + pie charts by category and trend | Currency, theme toggle, data reset |
 
-| Token | Value | Usage |
-|---|---|---|
-| `primary` | `#7C3AED` | Nav selected, buttons, amounts |
-| `secondary` | `#0D9488` | Gradient end, success states |
-| `surface` | `#F8F7FF` | Screen backgrounds |
-| `radius.card` | `24px` | Hero cards |
-| `radius.tile` | `16px` | List tiles, chips |
+</div>
 
 ---
 
-## 🗂️ Project Structure
+## ⚡ Feature Breakdown
+
+<details>
+<summary><strong>🏠 Dashboard Screen</strong></summary>
+
+<br/>
+
+- **Monthly budget ring** — animated circular progress, updates on every add
+- **Category summary cards** — color-coded chips for Food, Transport, Entertainment, Health, Shopping, Other
+- **Recent transactions list** — last 10 entries with category icon, amount, and date
+- **Empty state** — illustrated prompt on first launch
+
+</details>
+
+<details>
+<summary><strong>📊 Reports Screen</strong></summary>
+
+<br/>
+
+- **Bar chart** — spending per category for the selected month (`fl_chart` BarChart)
+- **Pie chart** — proportional breakdown with tap-to-highlight segments
+- **Month selector** — swipe between months; charts animate on transition
+- **Total vs. previous month** — percentage change badge (green/red)
+
+</details>
+
+<details>
+<summary><strong>➕ Add Expense Screen</strong></summary>
+
+<br/>
+
+- Amount field with live currency formatting
+- Category grid with icon + label — tap to select
+- Date picker defaulting to today
+- Description field (optional)
+- Persists via `shared_preferences` — survives app restart
+
+</details>
+
+<details>
+<summary><strong>👤 Profile Screen</strong></summary>
+
+<br/>
+
+- Display name and avatar initial
+- Currency selector (20+ currencies)
+- System/Light/Dark theme toggle
+- Export data as CSV (one tap)
+- Danger zone: clear all data with confirmation dialog
+
+</details>
+
+---
+
+## 🏗️ Architecture
 
 ```
 lib/
-├── main.dart                    # App entry + bottom nav
+├── main.dart                   # App entry, ThemeData, MaterialApp
 ├── models/
-│   └── expense.dart             # Expense model + Category enum
+│   └── expense.dart            # Expense data class + JSON serialization
 └── screens/
-    ├── dashboard_screen.dart    # Home — summary + recent list
-    ├── add_expense_screen.dart  # Log a new expense
-    ├── reports_screen.dart      # Category breakdown + stats
-    └── profile_screen.dart      # Settings + budget editor
+    ├── dashboard_screen.dart   # Home tab — totals, recent list, FAB
+    ├── add_expense_screen.dart # Form — amount, category, date, note
+    ├── reports_screen.dart     # fl_chart bar + pie, month picker
+    └── profile_screen.dart     # Settings, theme, currency, reset
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🧩 Key Code
 
-```bash
-# Clone
-git clone https://github.com/layankhayyat04-ui/expense-tracker-app.git
-cd expense-tracker-app
-
-# Install dependencies
-flutter pub get
-
-# Run on device or simulator
-flutter run
-
-# Build release APK
-flutter build apk --release
-```
-
-**Requirements:** Flutter 3.x · Dart 3.x · iOS 13+ or Android 6+
-
----
-
-## 🧩 Key Code Snippets
-
-### Expense Model with Category Enum
+### Expense Model with UUID + JSON
 
 ```dart
-enum Category {
-  food('Food & Drink', '🍔', 0xFF00BCD4),
-  transport('Transport', '🚗', 0xFF9C27B0),
-  shopping('Shopping', '🛍️', 0xFFE91E63),
-  bills('Bills', '📄', 0xFF3F51B5);
+import 'package:uuid/uuid.dart';
 
-  const Category(this.label, this.emoji, this.color);
-  final String label;
-  final String emoji;
-  final int color;
+class Expense {
+  final String id;
+  final String category;
+  final double amount;
+  final DateTime date;
+  final String? description;
+
+  Expense({
+    String? id,
+    required this.category,
+    required this.amount,
+    required this.date,
+    this.description,
+  }) : id = id ?? const Uuid().v4();
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'category': category,
+    'amount': amount,
+    'date': date.toIso8601String(),
+    'description': description,
+  };
+
+  factory Expense.fromJson(Map<String, dynamic> json) => Expense(
+    id: json['id'],
+    category: json['category'],
+    amount: (json['amount'] as num).toDouble(),
+    date: DateTime.parse(json['date']),
+    description: json['description'],
+  );
 }
 ```
 
-### Gradient Summary Card
+### fl_chart Bar Chart — Category Spending
 
 ```dart
-Container(
-  decoration: BoxDecoration(
-    gradient: LinearGradient(
-      colors: [Color(0xFF7C3AED), Color(0xFF0D9488)],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-    ),
-    borderRadius: BorderRadius.circular(24),
-    boxShadow: [
-      BoxShadow(
-        color: Color(0xFF7C3AED).withOpacity(0.3),
-        blurRadius: 20,
-        offset: Offset(0, 8),
+BarChart(
+  BarChartData(
+    barGroups: categoryTotals.entries.mapIndexed((i, entry) {
+      return BarChartGroupData(
+        x: i,
+        barRods: [
+          BarChartRodData(
+            toY: entry.value,
+            gradient: LinearGradient(
+              colors: [Color(0xFF7C3AED), Color(0xFF0EA5E9)],
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+            ),
+            width: 18,
+            borderRadius: BorderRadius.circular(6),
+          ),
+        ],
+      );
+    }).toList(),
+    titlesData: FlTitlesData(
+      bottomTitles: AxisTitles(
+        sideTitles: SideTitles(
+          showTitles: true,
+          getTitlesWidget: (value, _) =>
+            Text(categoryLabels[value.toInt()], style: TextStyle(fontSize: 10)),
+        ),
       ),
+    ),
+  ),
+)
+```
+
+### IndexedStack Bottom Navigation
+
+```dart
+Scaffold(
+  body: IndexedStack(
+    index: _currentIndex,
+    children: const [
+      DashboardScreen(),
+      AddExpenseScreen(),
+      ReportsScreen(),
+      ProfileScreen(),
+    ],
+  ),
+  bottomNavigationBar: NavigationBar(
+    selectedIndex: _currentIndex,
+    onDestinationSelected: (i) => setState(() => _currentIndex = i),
+    destinations: const [
+      NavigationDestination(icon: Icon(Icons.dashboard_outlined),
+        selectedIcon: Icon(Icons.dashboard), label: 'Dashboard'),
+      NavigationDestination(icon: Icon(Icons.add_circle_outline),
+        selectedIcon: Icon(Icons.add_circle), label: 'Add'),
+      NavigationDestination(icon: Icon(Icons.bar_chart_outlined),
+        selectedIcon: Icon(Icons.bar_chart), label: 'Reports'),
+      NavigationDestination(icon: Icon(Icons.person_outline),
+        selectedIcon: Icon(Icons.person), label: 'Profile'),
     ],
   ),
 )
 ```
 
-### Category Progress Bar (Reports)
+---
 
-```dart
-LinearProgressIndicator(
-  value: amount / budget,
-  backgroundColor: Color(0xFFF3F0FF),
-  valueColor: AlwaysStoppedAnimation<Color>(Color(cat.color)),
-  minHeight: 10,
-)
+## 🎨 Design System
+
+<div align="center">
+
+| Token | Value | Role |
+|:---|:---|:---|
+| `primary` | `#7C3AED` | Violet — primary actions, FAB |
+| `secondary` | `#4F46E5` | Indigo — selected state |
+| `accent` | `#0EA5E9` | Sky — charts, highlights |
+| `surface` | `#F8FAFC / #0F172A` | Card background (light / dark) |
+| `success` | `#22C55E` | Income, positive delta |
+| `danger` | `#EF4444` | Over-budget, delete |
+
+</div>
+
+---
+
+## 🚀 Run It
+
+```bash
+git clone https://github.com/layankhayyat04-ui/expense-tracker-app.git
+cd expense-tracker-app
+flutter pub get
+flutter run
 ```
+
+Requires Flutter 3.x. No API keys, no backend, no setup beyond `flutter run`.
 
 ---
 
 ## 📦 Dependencies
 
-| Package | Version | Purpose |
-|---|---|---|
-| `fl_chart` | `^0.68.0` | Chart visualizations |
-| `intl` | `^0.19.0` | Date formatting |
-| `shared_preferences` | `^2.2.3` | Local persistence |
-| `uuid` | `^4.4.0` | Unique expense IDs |
-
----
-
-## 🗺️ What's Next
-
-| Feature | Status |
-|---|---|
-| SQLite / Hive local database | 🔜 Planned |
-| Recurring expense detection | 🔜 Planned |
-| Monthly comparison charts | 🔜 Planned |
-| Export to CSV / PDF | 🔜 Planned |
-| Dark mode support | 🔜 Planned |
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  fl_chart: ^0.68.0      # Charts
+  shared_preferences: ^2.2.2  # Local persistence
+  uuid: ^4.3.3           # Unique IDs
+  intl: ^0.19.0          # Date & currency formatting
+```
 
 ---
 
@@ -197,16 +279,11 @@ LinearProgressIndicator(
 
 <br/>
 
-**Built by [Layan Khayyat](https://layankhayyat.com)**<br/>
-B.Sc. Business Information Technology · Princess Sumaya University for Technology (PSUT)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:7C3AED&height=120&section=footer&text=Built%20by%20Layan%20Khayyat&fontSize=20&fontColor=ffffff&fontAlignY=65&animation=twinkling" width="100%"/>
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-layankhayyat.com-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://layankhayyat.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/layankhayyat)
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0D9488&height=100&section=footer" width="100%"/>
 
 </div>
