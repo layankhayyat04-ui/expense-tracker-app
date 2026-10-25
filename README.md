@@ -1,5 +1,15 @@
 <div align="center">
 
+<a href="./showcase.html">
+<img src="https://img.shields.io/badge/%E2%9C%A8%20Live%20Showcase-7C3AED?style=for-the-badge&logoColor=white" height="36"/>
+</a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:7C3AED,30:9333EA,70:A855F7,100:C084FC&height=280&section=header&text=Expense%20Tracker&fontSize=80&fontColor=fff&fontAlignY=55&desc=Flutter%20%E2%80%A2%20Material%203%20%E2%80%A2%20fl_chart&descSize=20&descAlignY=75&descFontColor=E9D5FF&animation=twinkling&stroke=ffffff&strokeWidth=2" width="100%"/>
 
 </div>
