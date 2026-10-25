@@ -1,110 +1,71 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:7C3AED,50:4F46E5,100:0EA5E9&height=180&section=header&text=Expense%20Tracker&fontSize=52&fontColor=ffffff&fontAlignY=45&animation=blinking" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:7C3AED,30:9333EA,70:A855F7,100:C084FC&height=280&section=header&text=Expense%20Tracker&fontSize=80&fontColor=fff&fontAlignY=55&desc=Flutter%20%E2%80%A2%20Material%203%20%E2%80%A2%20fl_chart&descSize=20&descAlignY=75&descFontColor=E9D5FF&animation=twinkling&stroke=ffffff&strokeWidth=2" width="100%"/>
+
+</div>
 
 <br/>
 
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Flutter+%C2%B7+Material+3+%C2%B7+fl_chart;Track.+Visualize.+Understand.;4+screens+%C2%B7+Real-time+charts+%C2%B7+No+backend" alt="Typing SVG"/>
-</a>
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&pause=1000&color=9333EA&center=true&vCenter=true&width=600&lines=Track+every+penny.+Visualize+every+pattern.;No+account.+No+sync.+Fully+offline.;4+screens%2C+real+charts%2C+zero+setup." alt="typing"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=flutter,dart&theme=dark" height="50"/>
+
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://img.shields.io/badge/Material_3-%237C3AED?style=flat-square&logo=materialdesign&logoColor=white"/>
+<img src="https://img.shields.io/badge/fl__chart-%236D28D9?style=flat-square&logo=chartdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/shared__preferences-%234F46E5?style=flat-square"/>
+<img src="https://img.shields.io/badge/uuid-%230EA5E9?style=flat-square"/>
 
 <br/><br/>
 
-<p>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Material_3-757575?style=for-the-badge&logo=materialdesign&logoColor=white"/>
-  <img src="https://img.shields.io/badge/fl__chart-7C3AED?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/shared__preferences-0EA5E9?style=for-the-badge"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-7C3AED?style=flat-square"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Status-Complete-22C55E?style=flat-square"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/License-MIT-0EA5E9?style=flat-square"/>
-</p>
+<img src="https://img.shields.io/badge/Android%20%26%20iOS-cross--platform-22C55E?style=for-the-badge&logo=flutter&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Zero%20Backend-offline%20first-7C3AED?style=for-the-badge"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Status-Complete-A855F7?style=for-the-badge"/>
 
 </div>
 
 ---
 
-<div align="center">
-
-## `< The Idea />`
-
-</div>
-
-> Most expense apps bury you in menus. This one opens on your dashboard — every number you care about, no navigation required. Built entirely offline, data lives on-device, and the UI adapts to your system theme automatically.
-
 <br/>
 
----
+<table>
+<tr>
+<td width="50%">
 
-## 📱 Screens at a Glance
+### 💡 What & Why
 
-<div align="center">
+Most budget apps are overkill — accounts, cloud sync, paywalls. This one runs entirely on-device.
 
-| 🏠 Dashboard | ➕ Add Expense | 📊 Reports | 👤 Profile |
-|:---:|:---:|:---:|:---:|
-| Monthly total, recent list, quick-add FAB | Category picker, amount field, date selector | Bar + pie charts by category and trend | Currency, theme toggle, data reset |
+**Open it. Track it. Done.**
 
-</div>
+Four clean screens. Real-time charts. Offline persistence. Works on first launch with zero config.
 
----
+</td>
+<td width="50%">
 
-## ⚡ Feature Breakdown
+### 📱 Four Screens
 
-<details>
-<summary><strong>🏠 Dashboard Screen</strong></summary>
+| Screen | Purpose |
+|--------|---------|
+| 🏠 Dashboard | Totals, recent entries, budget ring |
+| ➕ Add Expense | Amount, category, date, description |
+| 📊 Reports | Bar + pie charts, month picker |
+| 👤 Profile | Theme, currency, CSV export |
 
-<br/>
-
-- **Monthly budget ring** — animated circular progress, updates on every add
-- **Category summary cards** — color-coded chips for Food, Transport, Entertainment, Health, Shopping, Other
-- **Recent transactions list** — last 10 entries with category icon, amount, and date
-- **Empty state** — illustrated prompt on first launch
-
-</details>
-
-<details>
-<summary><strong>📊 Reports Screen</strong></summary>
+</td>
+</tr>
+</table>
 
 <br/>
-
-- **Bar chart** — spending per category for the selected month (`fl_chart` BarChart)
-- **Pie chart** — proportional breakdown with tap-to-highlight segments
-- **Month selector** — swipe between months; charts animate on transition
-- **Total vs. previous month** — percentage change badge (green/red)
-
-</details>
-
-<details>
-<summary><strong>➕ Add Expense Screen</strong></summary>
-
-<br/>
-
-- Amount field with live currency formatting
-- Category grid with icon + label — tap to select
-- Date picker defaulting to today
-- Description field (optional)
-- Persists via `shared_preferences` — survives app restart
-
-</details>
-
-<details>
-<summary><strong>👤 Profile Screen</strong></summary>
-
-<br/>
-
-- Display name and avatar initial
-- Currency selector (20+ currencies)
-- System/Light/Dark theme toggle
-- Export data as CSV (one tap)
-- Danger zone: clear all data with confirmation dialog
-
-</details>
 
 ---
 
@@ -112,31 +73,34 @@
 
 ```
 lib/
-├── main.dart                   # App entry, ThemeData, MaterialApp
+├── main.dart                    # MaterialApp, ThemeData, IndexedStack nav
 ├── models/
-│   └── expense.dart            # Expense data class + JSON serialization
+│   └── expense.dart             # Expense model · UUID key · JSON serialization
 └── screens/
-    ├── dashboard_screen.dart   # Home tab — totals, recent list, FAB
-    ├── add_expense_screen.dart # Form — amount, category, date, note
-    ├── reports_screen.dart     # fl_chart bar + pie, month picker
-    └── profile_screen.dart     # Settings, theme, currency, reset
+    ├── dashboard_screen.dart    # Animated budget ring · category chips · recent 10
+    ├── add_expense_screen.dart  # Form with live currency formatting
+    ├── reports_screen.dart      # fl_chart bar + pie · month selector · delta badge
+    └── profile_screen.dart      # Theme toggle · currency picker · CSV export · reset
 ```
+
+<br/>
 
 ---
 
-## 🧩 Key Code
+## 🧩 Code Highlights
 
-### Expense Model with UUID + JSON
+<details>
+<summary><b>Expense model — UUID key + JSON serialization</b></summary>
+
+<br/>
 
 ```dart
-import 'package:uuid/uuid.dart';
-
 class Expense {
-  final String id;
-  final String category;
-  final double amount;
+  final String   id;
+  final String   category;
+  final double   amount;
   final DateTime date;
-  final String? description;
+  final String?  description;
 
   Expense({
     String? id,
@@ -146,75 +110,62 @@ class Expense {
     this.description,
   }) : id = id ?? const Uuid().v4();
 
-  Map<String, dynamic> toJson() => {
-    'id': id,
-    'category': category,
-    'amount': amount,
-    'date': date.toIso8601String(),
-    'description': description,
-  };
-
-  factory Expense.fromJson(Map<String, dynamic> json) => Expense(
-    id: json['id'],
-    category: json['category'],
-    amount: (json['amount'] as num).toDouble(),
-    date: DateTime.parse(json['date']),
-    description: json['description'],
+  factory Expense.fromJson(Map<String, dynamic> j) => Expense(
+    id:          j['id'],
+    category:    j['category'],
+    amount:      (j['amount'] as num).toDouble(),
+    date:        DateTime.parse(j['date']),
+    description: j['description'],
   );
 }
 ```
 
-### fl_chart Bar Chart — Category Spending
+</details>
+
+<details>
+<summary><b>Reports screen — fl_chart gradient bar rods</b></summary>
+
+<br/>
 
 ```dart
 BarChart(
   BarChartData(
-    barGroups: categoryTotals.entries.mapIndexed((i, entry) {
-      return BarChartGroupData(
-        x: i,
-        barRods: [
-          BarChartRodData(
-            toY: entry.value,
-            gradient: LinearGradient(
-              colors: [Color(0xFF7C3AED), Color(0xFF0EA5E9)],
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
-            ),
-            width: 18,
-            borderRadius: BorderRadius.circular(6),
+    barGroups: categoryTotals.entries.mapIndexed((i, entry) =>
+      BarChartGroupData(x: i, barRods: [
+        BarChartRodData(
+          toY: entry.value,
+          gradient: const LinearGradient(
+            colors: [Color(0xFF7C3AED), Color(0xFF0EA5E9)],
+            begin:  Alignment.bottomCenter,
+            end:    Alignment.topCenter,
           ),
-        ],
-      );
-    }).toList(),
-    titlesData: FlTitlesData(
-      bottomTitles: AxisTitles(
-        sideTitles: SideTitles(
-          showTitles: true,
-          getTitlesWidget: (value, _) =>
-            Text(categoryLabels[value.toInt()], style: TextStyle(fontSize: 10)),
+          width: 18, borderRadius: BorderRadius.circular(6),
         ),
-      ),
-    ),
+      ]),
+    ).toList(),
   ),
 )
 ```
 
-### IndexedStack Bottom Navigation
+</details>
+
+<details>
+<summary><b>main.dart — IndexedStack keeps all 4 tabs alive</b></summary>
+
+<br/>
 
 ```dart
 Scaffold(
   body: IndexedStack(
-    index: _currentIndex,
+    index: _selectedIndex,
     children: const [
-      DashboardScreen(),
-      AddExpenseScreen(),
-      ReportsScreen(),
-      ProfileScreen(),
+      DashboardScreen(), AddExpenseScreen(),
+      ReportsScreen(),   ProfileScreen(),
     ],
   ),
   bottomNavigationBar: NavigationBar(
-    selectedIndex: _currentIndex,
-    onDestinationSelected: (i) => setState(() => _currentIndex = i),
+    selectedIndex: _selectedIndex,
+    onDestinationSelected: (i) => setState(() => _selectedIndex = i),
     destinations: const [
       NavigationDestination(icon: Icon(Icons.dashboard_outlined),
         selectedIcon: Icon(Icons.dashboard), label: 'Dashboard'),
@@ -229,22 +180,27 @@ Scaffold(
 )
 ```
 
+</details>
+
+<br/>
+
 ---
 
-## 🎨 Design System
+## 🎨 Design Tokens
 
 <div align="center">
 
-| Token | Value | Role |
-|:---|:---|:---|
-| `primary` | `#7C3AED` | Violet — primary actions, FAB |
-| `secondary` | `#4F46E5` | Indigo — selected state |
-| `accent` | `#0EA5E9` | Sky — charts, highlights |
-| `surface` | `#F8FAFC / #0F172A` | Card background (light / dark) |
-| `success` | `#22C55E` | Income, positive delta |
-| `danger` | `#EF4444` | Over-budget, delete |
+| Token | Hex | Used For |
+|:------|:----|:---------|
+| `primary` | ![#7C3AED](https://placehold.co/14x14/7C3AED/7C3AED.png) `#7C3AED` | FAB · selected state · gradient start |
+| `secondary` | ![#4F46E5](https://placehold.co/14x14/4F46E5/4F46E5.png) `#4F46E5` | Chart gradient end |
+| `accent` | ![#0EA5E9](https://placehold.co/14x14/0EA5E9/0EA5E9.png) `#0EA5E9` | Highlights · links |
+| `success` | ![#22C55E](https://placehold.co/14x14/22C55E/22C55E.png) `#22C55E` | Income · positive badge |
+| `danger` | ![#EF4444](https://placehold.co/14x14/EF4444/EF4444.png) `#EF4444` | Over-budget · delete |
 
 </div>
+
+<br/>
 
 ---
 
@@ -257,33 +213,28 @@ flutter pub get
 flutter run
 ```
 
-Requires Flutter 3.x. No API keys, no backend, no setup beyond `flutter run`.
-
----
-
-## 📦 Dependencies
+> **Flutter 3.x** · No API keys · No backend · No account. Just `flutter run`.
 
 ```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  fl_chart: ^0.68.0      # Charts
-  shared_preferences: ^2.2.2  # Local persistence
-  uuid: ^4.3.3           # Unique IDs
-  intl: ^0.19.0          # Date & currency formatting
+# pubspec.yaml
+fl_chart:           ^0.68.0
+shared_preferences: ^2.2.2
+uuid:               ^4.3.3
+intl:               ^0.19.0
 ```
+
+<br/>
 
 ---
 
 <div align="center">
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:7C3AED&height=120&section=footer&text=Built%20by%20Layan%20Khayyat&fontSize=20&fontColor=ffffff&fontAlignY=65&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C084FC,50:9333EA,100:7C3AED&height=120&section=footer&text=Built%20by%20Layan%20Khayyat&fontSize=22&fontColor=fff&fontAlignY=70&animation=twinkling" width="100%"/>
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-layankhayyat.com-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://layankhayyat.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/layankhayyat)
+[![Portfolio](https://img.shields.io/badge/%F0%9F%8C%90%20layankhayyat.com-7C3AED?style=for-the-badge)](https://layankhayyat.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/layankhayyat)
 
 </div>
