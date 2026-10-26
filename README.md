@@ -10,7 +10,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:7C3AED,30:9333EA,70:A855F7,100:C084FC&height=280&section=header&text=Expense%20Tracker&fontSize=80&fontColor=fff&fontAlignY=55&desc=Flutter%20%E2%80%A2%20Material%203%20%E2%80%A2%20fl_chart&descSize=20&descAlignY=75&descFontColor=E9D5FF&animation=twinkling&stroke=ffffff&strokeWidth=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,40:9333EA,80:A855F7,100:C084FC&height=250&section=header&text=Expense%20Tracker&fontSize=72&fontColor=fff&fontAlignY=45&desc=Flutter%20%E2%80%A2%20Material%203%20%E2%80%A2%20fl_chart&descSize=20&descAlignY=65&descFontColor=E9D5FF&animation=twinkling" width="100%"/>
 
 </div>
 
